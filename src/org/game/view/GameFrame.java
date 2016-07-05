@@ -59,6 +59,9 @@ public class GameFrame extends JFrameView implements GameObserver {
 
 		updateBackgroundColor(model.getBackgoundColor());
 		add(optionpanel);
+
+		// set resizable to false
+		setResizable(false);
 		makeFrameVisible();
 	}
 	
@@ -85,6 +88,8 @@ public class GameFrame extends JFrameView implements GameObserver {
 		gamepanel = new GamePanel(model);
 		add(gamepanel);
 
+		// enable resizing
+		setResizable(true);
 		makeFrameVisible();
 	}
 	
